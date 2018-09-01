@@ -30,7 +30,8 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 1em;
+  font-size: 0.875em; /* 14px */
+  line-height: 1.5rem; /* 21px */
   color: #2d2d2d;
 }
 
@@ -47,8 +48,13 @@ h5 {
 }
 
 h1 {
-  font-size: 41.887px;
+  font-size: 33.978px;
+  line-height: 35px;
+  /* desktop
   font-size: 2.618rem;
+  line-height: 42px;
+  */
+  padding: 3.5px 0;
   text-transform: uppercase;
   letter-spacing: .1rem;
 }
@@ -69,12 +75,10 @@ main {
   display: block;
 }
 
-nav ul {
-}
-
 header {
-  height: 80px;
-  margin-top: 15%;
+  height: 84px;
+  margin-top: 25%;
+  margin-top: 25vh;
 }
 
 header h1 {
@@ -83,4 +87,8 @@ header h1 {
 
 header p {
   padding: .5rem;
+}
+
+nav ul {
+  padding: 1rem;
 }
