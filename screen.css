@@ -20,18 +20,22 @@ BODY
 
 /*
 Temporary Modular scale:
-  
+
 */
 
-img {
-  max-width: 100%;
+html {
+  height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   color: #2d2d2d;
-  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -43,9 +47,10 @@ h5 {
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 41.887px;
+  font-size: 2.618rem;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .1rem;
 }
 
 a {
@@ -59,5 +64,23 @@ a:hover {
   color: #c4918e;
 }
 
+main {
+  text-align: center;
+  display: block;
+}
+
 nav ul {
+}
+
+header {
+  height: 80px;
+  margin-top: 15%;
+}
+
+header h1 {
+  padding: .5rem;
+}
+
+header p {
+  padding: .5rem;
 }
