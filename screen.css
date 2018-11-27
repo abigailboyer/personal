@@ -45,11 +45,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Oswald', sans-serif;
-}
-
-#boyer {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 
 h1 {
@@ -71,6 +67,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+
+  /* accent option gold
+  color: #c4ac8e;
+  color: #c4918e; */
 }
 
 main {
@@ -86,8 +86,4 @@ header {
 
 header h1 {
   padding: .5rem;
-}
-
-nav {
-  font-family: 'Montserrat', sans-serif;
 }
