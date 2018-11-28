@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   font-size: 0.875em; /* 14px */
   line-height: 1.5rem; /* 21px */
   color: #2d2d2d;
@@ -45,19 +45,18 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Arimo', sans-serif;
 }
 
 h1 {
-  font-size: 33.978px;
+  font-size: 30px;
   line-height: 35px;
   /* desktop
   font-size: 2.618rem;
   line-height: 42px;
   */
-  padding: 3.5px 0;
   text-transform: uppercase;
   letter-spacing: .1rem;
+  margin-bottom: 14px;
 }
 
 a {
@@ -76,14 +75,13 @@ a:hover {
 main {
   text-align: left;
   display: block;
+  margin-left: 10vw;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: auto;
 }
 
-header {
-  height: 70px;
-  margin-top: 25%;
-  margin-top: 25vh;
-}
-
-header h1 {
-  padding: .5rem;
+header p {
+  font-size: 15px;
+  font-style: italic;
 }
