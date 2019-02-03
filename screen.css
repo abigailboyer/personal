@@ -85,3 +85,12 @@ header p {
   font-size: 15px;
   font-style: italic;
 }
+
+button {
+  border: none;
+  background-color: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
