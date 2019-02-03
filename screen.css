@@ -86,11 +86,9 @@ header p {
   font-style: italic;
 }
 
-button {
-  border: none;
-  background-color: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  margin: 0;
-  padding: 0;
+#contactContent,
+#portfolioContent {
+  display: none;
+  font-style:italic;
+  margin-left: 5px;
 }
