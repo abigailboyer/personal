@@ -16,4 +16,12 @@ $(document).ready(function(){
       $('#portfolioContent').hide(200);
     }
   });
+
+  $('#headerToggle').click(function(){
+    if($('#headerContent').css('display') === 'none') {
+      $('#headerContent').show(200);
+    } else {
+      $('#headerContent').hide(200);
+    }
+  });
 });

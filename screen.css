@@ -5,6 +5,13 @@ menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul
 /* stylelint-enable */
 
 /*
+TODO:
+baseline
+switch to ems
+scroll header subtitle content
+ */
+
+/*
 Temporary Font families:
 HEAD
   font-family: 'Oswald', sans-serif;
@@ -47,6 +54,10 @@ h4,
 h5 {
 }
 
+header {
+  margin-bottom: 14px;
+}
+
 h1 {
   font-size: 30px;
   line-height: 35px;
@@ -56,7 +67,7 @@ h1 {
   */
   text-transform: uppercase;
   letter-spacing: .1rem;
-  margin-bottom: 14px;
+  cursor:pointer;
 }
 
 a {
@@ -81,14 +92,15 @@ main {
   height: auto;
 }
 
-header p {
-  font-size: 15px;
-  font-style: italic;
-}
-
 #contactContent,
 #portfolioContent {
   display: none;
-  font-style:italic;
+  font-style: italic;
   margin-left: 5px;
+}
+
+#headerContent {
+  display: none;
+  font-style: italic;
+
 }
