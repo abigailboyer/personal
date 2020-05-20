@@ -4,6 +4,14 @@ nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,su
 menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
+/* todo:
+  . use ems
+  . adjust to baseline
+  . add js for the menu button
+  .
+ */
+
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -21,14 +29,13 @@ main {
   padding-bottom: 100px;
 }
 
-
 ol,
 ul {
   list-style: none;
 }
 
 a {
-  color: inherit;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 a:hover {
@@ -82,6 +89,17 @@ header h2 {
   font-size: 14px;
   font-weight: normal;
   text-align: right;
+}
+
+nav {
+  position: absolute;
+  top: 42px;
+  right: 25px;
+}
+
+nav li {
+  float: left;
+  margin-right: 14px;
 }
 
 img {
