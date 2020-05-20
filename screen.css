@@ -16,6 +16,7 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-family: 14px;
+  line-height: 18px;
   height: 100%;
 }
 
@@ -44,17 +45,20 @@ a:hover {
 
 h1 {
   font-size: 24px;
+  line-height: 28px;
   font-weight: bold;
   text-align: right;
 }
 
 h2 {
   font-size: 20px;
+  line-height: 22px;
   font-weight: 600;
 }
 
 h3 {
   font-size: 18px;
+  line-height: 21px;
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -68,6 +72,7 @@ h4,
 
 h5 {
   font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 0, 0, 0.75);
   margin-bottom: 14px;
 }
@@ -99,13 +104,13 @@ nav {
 
 nav li {
   float: left;
-  margin-right: 14px;
+  margin-left: 14px;
 }
 
 img {
   border: 0;
-  width: 337px;
-  height: 337px;
+  width: 330px;
+  height: 330px;
   margin-bottom: 21px;
 }
 
