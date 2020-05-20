@@ -16,6 +16,12 @@ header {
   margin: 100px 25px 25px 25px;
 }
 
+main {
+  /* footer */
+  padding-bottom: 100px;
+}
+
+
 ol,
 ul {
   list-style: none;
@@ -50,6 +56,7 @@ h4,
 .projectLinks {
   font-weight: 600;
   text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 h5 {
@@ -120,8 +127,23 @@ img {
   margin-right: 20px;
 }
 
-main {
-  padding-bottom: 100px;
+#skills ul {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  list-style: inside;
+}
+
+#skills h2 {
+  margin-bottom: 14px;
+}
+
+#skills h4 {
+  margin-top: 14px;
 }
 
 footer {
@@ -131,13 +153,3 @@ footer {
   background: rgba(0, 0, 0, 0.04);
   box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
 }
-
-
-
-
-
-
-
-
-
-.
