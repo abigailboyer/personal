@@ -4,45 +4,130 @@
   <title>Abigail Boyer</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <!--<link rel="stylesheet" href="http://basehold.it/14" /> -->
-<!--  <link href="https://fonts.googleapis.com/css?family=Arimo|Lato" rel="stylesheet" /> -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-<!--  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="screen.css" />
 </head>
 <body>
-  <main>
-    <header>
-      <h1 id="headerToggle">
-        Abigail Boyer
-      </h1>
-      <p id="headerContent">Chicago based front end web developer.</p>
-    </header>
+  <header>
     <nav>
       <ul>
         <li>
-          <ul id="contactToggle">
-            <li>
-              <a href="#" id="contactToggle">Contact</a>
-            </li>
-            <li id="contactContent">
-              <address>
-                <a href="mailto:abigail.boyer11@gmail.com">abigail.boyer11@gmail.com</a>
-              </address>
-            </li>
-          </ul>
+          <a href="#">Contact</a>
         </li>
         <li>
-          <a href="https://github.com/abigailboyer">Github</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/abigailb-oyer/">Linkedin</a>
+          <a href="#">Github</a>
+        </li>
+        <li>
+          <a href="#">LinkedIn</a>
         </li>
       </ul>
     </nav>
-  </main>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <h1>Hi, I'm Abigail</h1>
+    <h2>I'm a new graduate looking for positions in frontend web development.</h2>
+  </header>
 
+  <main>
+    <section id="work">
+      <h2>My Projects</h2>
+      <article class="project">
+        <img class="placeholder" src="#" />
+        <h3>Starfleet Academy</h3>
+        <h5>React.js, React Hooks, Sass/Less</h5>
+        <p>My love and adoration for Star Trek runs deep. So deep, in fact, that
+          I created a student portal for the attendees of the famed Starfleet Academy.
+        </p>
+        <ul class="projectLinks">
+          <li>
+            <a href="#">Live Website</a>
+          </li>
+          <li>
+            <a href="#">Source Code</a>
+          </li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <img class="placeholder" src="#" />
+        <h3>Avion Airlines</h3>
+        <h5>jQuery, javascript</h5>
+        <p>
+          A couple years ago, I made an airline just like this for a group project at school. I’ve recently cleaned it up and made it better.
+        </p>
+        <ul class="projectLinks">
+          <li>
+            <a href="#">Live Website</a>
+          </li>
+          <li>
+            <a href="#">Source Code</a>
+          </li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <img class="placeholder" src="#" />
+        <h3>The Cage</h3>
+        <h5>React.js</h5>
+        <p>
+          My friend Maddie and I graduated with the same degree at the same time.
+          We were talking one day and we decided that we needed to have a react
+          app on our portfolios.
+          I asked her, “Do you want to build an app for a movie theater called
+          “The Cage” that only plays poorly rated Nicolas Cage films?”
+          She replied, “Of course I do”
+          And here it is.
+        </p>
+        <ul class="projectLinks">
+          <li>
+            <a href="#">Live Website</a>
+          </li>
+          <li>
+            <a href="#">Source Code</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>My name is Abigail Boyer. I do not go by Abby, in case you wondered.</p>
+      <p>I graduated in May 2020 from the Illinois Institute of Technology with a
+          B.S. in Information Technology and Management. I specialized in web
+          development and minored in philosophy, both for the same reason: I’m
+          passionate about considering complex questions and finding their best
+          solutions.</p>
+    </section>
+
+    <section id="skills">
+      <h4>Languages & Frameworks</h4>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>javascript</li>
+          <li>React.js</li>
+          <li>React Hooks</li>
+          <li>Redux</li>
+          <li>Sass/Less</li>
+          <li>Mocha</li>
+        </ul>
+      <h4>Other</h4>
+        <ul>
+          <li>
+            Responsive design
+          </li>
+          <li>
+            Project Management
+          </li>
+        </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hosted on <a href="#">Github</a>.</p>
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="site.js"></script>
-  </body>
+</body>
 </html>
