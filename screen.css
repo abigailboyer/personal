@@ -111,7 +111,7 @@ img {
   border: 0;
   width: 330px;
   height: 330px;
-  margin-bottom: 21px;
+  margin-bottom: 42px;
 }
 
 #bg {
@@ -150,8 +150,10 @@ img {
   margin-right: 20px;
 }
 
-#skills ul {
+#about {
+}
 
+#skills ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
