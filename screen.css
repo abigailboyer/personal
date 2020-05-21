@@ -115,8 +115,8 @@ nav li {
 
 img {
   border: 0;
-  width: 315px;
-  height: 315px;
+  width: 100%;
+  height: 315px; /* temporary until there are real images */
   margin-bottom: 17px; /* to account for drop shadow blur */
 }
 
@@ -127,8 +127,8 @@ img {
 
 #or {
   background: radial-gradient(177.18% 177.18% at 100% 0%, #FFBD5A 14.58%, #FF5894 100%), #38C4CD;
-  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.25);
-  transform: rotate(90deg);
+  box-shadow: 8px -8px 5px rgba(0, 0, 0, 0.25);
+  transform: rotate(180deg);
 }
 
 #bp {
@@ -146,8 +146,11 @@ img {
   margin-bottom: 168px;
 }
 
+.content {
+  overflow: hidden;
+}
+
 .projectLinks {
-  display: block;
   margin-top: .25px;
   margin-bottom: 15.5px;
   font-weight: 600;
@@ -161,14 +164,8 @@ img {
 
 /* skills section */
 
-.skillColumns {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.other {
-  display: grid;
-  grid-template-columns: auto auto;
+#skills {
+  overflow: hidden;
 }
 
 #skills li {
@@ -184,10 +181,51 @@ img {
   margin-top: 10.5px;
 }
 
+.skillColumns {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.skillsOther {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 footer {
   padding: 42px 25px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
   background: rgba(0, 0, 0, 0.04);
   box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* media queries */
+
+/* this max width is temporary */
+@media (max-width: 350px) {
+  img {
+    width: 210px;
+    height: 210px;
+  }
+
+  .skillColumns,
+  .skillsOther {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  img {
+    width: 200px;
+    float: left;
+    margin-right: 21px;
+  }
+
+  .project > ul {
+    background-color: lightgreen;
+    display: block;
+    clear: both;
+  }
+
+
 }
