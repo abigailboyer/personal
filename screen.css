@@ -6,19 +6,18 @@ menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul
 
 /* todo:
   . use ems
-  . adjust to baseline
   . add js for the menu button
   .
  */
 
- /* add baseline grid */
+ /* add baseline grid
 
  html {
    background-color: #fff;
    background-size: 21px 21px;
    background-image: linear-gradient(#ccc .05em, transparent .05em),
                      linear-gradient(90deg, #ccc .05em, transparent .05em);
- }
+ }*/
 
 body {
   margin: 0;
@@ -222,10 +221,7 @@ footer {
   }
 
   .project > ul {
-    background-color: lightgreen;
     display: block;
     clear: both;
   }
-
-
 }
