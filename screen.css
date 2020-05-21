@@ -11,18 +11,26 @@ menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul
   .
  */
 
+ /* add baseline grid */
+
+ html {
+   background-color: #fff;
+   background-size: 21px 21px;
+   background-image: linear-gradient(#ccc .05em, transparent .05em),
+                     linear-gradient(90deg, #ccc .05em, transparent .05em);
+ }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-family: 14px;
-  line-height: 18px;
+  line-height: 21px;
   height: 100%;
 }
 
 main,
 header {
-  margin: 100px 25px 25px 25px;
+  margin: 105px 31.5px 31.5px 31.5px;
 }
 
 main {
@@ -45,14 +53,14 @@ a:hover {
 
 h1 {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 42px;
   font-weight: bold;
   text-align: right;
 }
 
 h2 {
   font-size: 20px;
-  line-height: 22px;
+  line-height: 21px;
   font-weight: 600;
 }
 
@@ -60,40 +68,41 @@ h3 {
   font-size: 18px;
   line-height: 21px;
   font-weight: 600;
-  margin-bottom: 7px;
+  margin-bottom: 5.25px;
 }
 
 h4,
 .projectLinks {
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-top: .25px;
+  margin-bottom: 15.5px;
 }
 
 h5 {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
   color: rgba(0, 0, 0, 0.75);
-  margin-bottom: 14px;
+  margin-bottom: 15.75px;
 }
 
-h1,
 h2 {
   margin-bottom: 21px;
 }
 
 p {
-  margin-bottom: 14px;
+  margin-bottom: 21px;
 }
 
 header {
-  margin-bottom: 100px;
+  margin-bottom: 105px;
 }
 
 header h2 {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: right;
+  margin-bottom: 10.5px;
 }
 
 nav {
@@ -109,9 +118,9 @@ nav li {
 
 img {
   border: 0;
-  width: 330px;
-  height: 330px;
-  margin-bottom: 42px;
+  width: 315px;
+  height: 315px;
+  margin-bottom: 17px; /* to account for drop shadow blur */
 }
 
 #bg {
@@ -137,7 +146,7 @@ img {
 }
 
 .project {
-  margin-bottom: 100px;
+  margin-bottom: 168px;
 }
 
 .projectLinks {
@@ -146,11 +155,7 @@ img {
 
 .projectLinks li {
   float: left;
-  margin-top: 14px;
   margin-right: 20px;
-}
-
-#about {
 }
 
 #skills ul {
@@ -164,11 +169,11 @@ img {
 }
 
 #skills h2 {
-  margin-bottom: 14px;
+  margin-bottom: 10.5px;
 }
 
 #skills h4 {
-  margin-top: 14px;
+  margin-top: 10.5px;
 }
 
 footer {
