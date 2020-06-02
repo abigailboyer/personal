@@ -10,7 +10,7 @@ menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul
   . add js for the menu button
   .
  */
- 
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -53,6 +53,7 @@ h2 {
   font-size: 20px;
   line-height: 21px;
   font-weight: 600;
+  padding-left: 21px;
 }
 
 h3 {
@@ -165,6 +166,7 @@ img {
 
 #skills h2 {
   margin-bottom: 10.5px;
+  padding-left: 0;
 }
 
 #skills h4 {
