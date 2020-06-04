@@ -225,7 +225,6 @@ footer {
   }
 
   .skillsOther {
-    display: block;
   }
 }
 
@@ -233,5 +232,11 @@ footer {
   img {
     width: 250px;
   }
+
+@media (min-width: 900px) {
+  .skillsOther {
+    grid-template-columns: auto auto auto;
+  }
+}
 
 }
