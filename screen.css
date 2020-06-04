@@ -193,6 +193,11 @@ footer {
   box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
 }
 
+footer p {
+  float: left;
+  margin-left: 21px;
+}
+
 /* media queries */
 
 /* this max width is temporary */
