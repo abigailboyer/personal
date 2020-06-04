@@ -238,14 +238,39 @@ footer {
   header,
   main,
   nav {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
   }
 
   nav {
     right: 0;
   }
 
+  header h1 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 10.5px;
+  }
+
+  header h2 {
+    font-size: 22px;
+    line-height: 31.5px;
+  }
+
+  header {
+    margin-top: 210px;
+  }
+
+  /* change alignment */
+  .project:nth-child(odd) .image {
+    float: right;
+    margin-left: 50px;
+  }
+
+  #about .image {
+    float: right;
+    margin-left: 50px;
+  }
 
   .skillsOther {
     grid-template-columns: auto auto auto;
