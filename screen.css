@@ -135,7 +135,8 @@ img {
 }
 
 .project {
-  margin-bottom: 168px;
+  display: inline-block;
+  margin-bottom: 84px;
 }
 
 .content {
@@ -232,4 +233,5 @@ footer {
   img {
     width: 250px;
   }
+
 }
