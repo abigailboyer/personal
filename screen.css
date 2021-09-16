@@ -74,117 +74,6 @@ h5 {
   margin-bottom: 15.75px;
 }
 
-h2 {
-  margin-bottom: 21px;
-}
-
-p {
-  padding-bottom: 21px;
-}
-
-header {
-  margin-bottom: 105px;
-}
-
-header h2 {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: right;
-  margin-bottom: 10.5px;
-}
-
-nav {
-  position: absolute;
-  top: 42px;
-  right: 25px;
-}
-
-nav li {
-  float: left;
-  margin-left: 14px;
-}
-
-img {
-  border: 0;
-  width: 100%;
-  height: 315px; /* temporary until there are real images */
-}
-
-.image {
-  margin-bottom: 21px;
-}
-
-#bg {
-  background: radial-gradient(177.18% 177.18% at 100% 0%, #A4FFBD 0%, #1D5CFF 100%), #38C4CD;
-  box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25);
-}
-
-#or {
-  background: radial-gradient(177.18% 177.18% at 100% 0%, #FFBD5A 14.58%, #FF5894 100%), #38C4CD;
-  box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25);
-}
-
-#bp {
-  background: radial-gradient(177.18% 177.18% at 100% 0%, #F2A4FF 0%, #1D5CFF 100%), #38C4CD;
-  box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25);
-}
-
-#oy {
-  background: radial-gradient(177.18% 177.18% at 100% 0%, #FBFF20 0%, #FF4F4F 100%), #38C4CD;
-  box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25);
-}
-
-.project {
-  display: inline-block;
-  margin-bottom: 84px;
-}
-
-.content {
-  overflow: hidden;
-}
-
-.projectLinks {
-  margin-top: .25px;
-  margin-bottom: 15.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.projectLinks li {
-  float: left;
-  margin-right: 20px;
-}
-
-/* skills section */
-
-#skills {
-  overflow: hidden;
-}
-
-#skills li {
-  list-style: inside;
-  white-space: nowrap;
-}
-
-#skills h2 {
-  margin-bottom: 10.5px;
-  padding-left: 0;
-}
-
-#skills h4 {
-  margin-top: 10.5px;
-}
-
-.skillColumns {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.skillsOther {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
 footer {
   padding: 42px 25px;
   font-size: 12px;
@@ -203,81 +92,17 @@ footer p {
 /* this max width is temporary */
 /* hardcoded image pixel widths are too */
 @media (max-width: 400px) {
-  img {
-    width: 210px;
-    height: 210px;
-  }
 
-  .skillColumns,
-  .skillsOther {
-    display: block;
-  }
 }
 
 @media (min-width: 600px) {
-  img {
-    width: 200px;
-    float: left;
-    margin-right: 21px;
-  }
 
-  .project > ul {
-    clear: both;
-  }
-
-  #about {
-    margin-bottom: 21px;
-  }
-
-  .skillsOther {
-  }
 }
 
 @media (min-width: 700px) {
-  img {
-    width: 250px;
-  }
+
 }
 
 @media (min-width: 900px) {
-  header,
-  main,
-  nav {
-    margin-left: 250px;
-    margin-right: 250px;
-  }
 
-  nav {
-    right: 0;
-  }
-
-  header h1 {
-    font-size: 32px;
-    line-height: 42px;
-    margin-bottom: 10.5px;
-  }
-
-  header h2 {
-    font-size: 22px;
-    line-height: 31.5px;
-  }
-
-  header {
-    margin-top: 210px;
-  }
-
-  /* change alignment */
-  .project:nth-child(odd) .image {
-    float: right;
-    margin-left: 50px;
-  }
-
-  #about .image {
-    float: right;
-    margin-left: 50px;
-  }
-
-  .skillsOther {
-    grid-template-columns: auto auto auto;
-  }
 }
