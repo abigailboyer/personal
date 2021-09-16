@@ -21,7 +21,7 @@ body {
 
 main,
 header {
-  margin: 105px 31.5px 31.5px 31.5px;
+  margin: 73.5px 31.5px 31.5px 31.5px;
 }
 
 main {
@@ -42,11 +42,14 @@ a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
+p {
+  padding-bottom: 10.5px;
+}
+
 h1 {
   font-size: 24px;
   line-height: 42px;
   font-weight: bold;
-  text-align: right;
 }
 
 h2 {
@@ -74,8 +77,85 @@ h5 {
   margin-bottom: 15.75px;
 }
 
+header h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+nav {
+  display: inline-block;
+  margin-bottom: 21px;
+}
+
+nav li {
+  float: left;
+  margin-right: 14px;
+}
+
+.project,
+#about,
+#skils {
+  clear: both;
+  display: inline-block;
+  margin: 21px 0;
+}
+
+.projectLinks {
+  margin-top: .25px;
+  margin-bottom: 15.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: pink;
+}
+
+.projectLinks li {
+  float: left;
+  margin-right: 14px;
+}
+
+#about h2,
+#skills h2 {
+  margin-bottom: 21px;
+}
+
+#skills h2 {
+  margin-top: 21px;
+}
+
+/* skills section */
+
+#skills {
+  overflow: hidden;
+}
+
+#skills li {
+  list-style: inside;
+  white-space: normal;
+  margin-left: 10px;
+}
+
+#skills h2 {
+  margin-bottom: 10.5px;
+  padding-left: 0;
+}
+
+#skills h4 {
+  margin-top: 10.5px;
+}
+
+.skillColumns {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.skillsOther {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
 footer {
-  padding: 42px 25px;
+  padding: 42px 21px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
   background: rgba(0, 0, 0, 0.04);
@@ -90,13 +170,25 @@ footer p {
 /* media queries */
 
 /* this max width is temporary */
-/* hardcoded image pixel widths are too */
+/* hardcoded image pixel widths are temporary */
 @media (max-width: 400px) {
-
+  .skillColumns,
+  .skillsOther {
+    display: block;
+  }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
+  .skillColumns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
 
+@media (min-width: 450px) {
+  #skills li {
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 700px) {
