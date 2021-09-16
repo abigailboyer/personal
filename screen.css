@@ -21,12 +21,12 @@ body {
 
 main,
 header {
-  margin: 73.5px 31.5px 31.5px 31.5px;
+  margin: 73.5px 31.5px;
 }
 
 main {
   /* footer */
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 ol,
@@ -56,6 +56,7 @@ h2 {
   font-size: 20px;
   line-height: 21px;
   font-weight: 600;
+  margin-bottom: 21px;
 }
 
 h3 {
@@ -92,12 +93,26 @@ nav li {
   margin-right: 14px;
 }
 
-.project,
-#about,
-#skils {
+#education p {
+  padding-bottom: 5.75px;
+}
+
+#education .school {
+  font-style: italic;
+  font-weight: 400;
+}
+
+#education .dates {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.project {
   clear: both;
   display: inline-block;
-  margin: 21px 0;
+  margin-bottom: 42px;
 }
 
 .projectLinks {
@@ -113,13 +128,9 @@ nav li {
   margin-right: 14px;
 }
 
-#about h2,
-#skills h2 {
-  margin-bottom: 21px;
-}
-
-#skills h2 {
-  margin-top: 21px;
+#about,
+#education {
+  margin-bottom: 42px;
 }
 
 /* skills section */
@@ -152,7 +163,6 @@ nav li {
   display: grid;
   grid-template-columns: auto auto;
 }
-
 
 footer {
   padding: 42px 21px;
@@ -192,9 +202,86 @@ footer p {
 }
 
 @media (min-width: 700px) {
+  header,
+  main {
+    margin-top: 100px;
+  }
 
+  /* find a better way to do the sidebar */
+  main {
+    margin-left: 273px;
+    padding-top: 10.5px;
+  }
+
+  nav {
+    position: absolute;
+    top: 21px;
+    left: 31.5px;
+  }
+
+  .sidebar {
+    float: left;
+    width: 200px;
+  }
+
+  #about,
+  #skills {
+    margin-top: 42px;
+  }
+
+  .skillsOther {
+    grid-template-columns: auto auto auto;
+  }
 }
 
 @media (min-width: 900px) {
+  nav {
+    top: 42px;
+    left: 181.5px;
+  }
 
+  main {
+    margin-left: 423px;
+    margin-right: 150px;
+  }
+
+  .sidebar,
+  .footerContent {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    top: 42px;
+    left: 281.5px;
+  }
+
+  main {
+    margin-left: 523px;
+    margin-right: 250px;
+  }
+
+  .sidebar,
+  .footerContent {
+    margin-left: 250px;
+  }
+}
+
+
+@media (min-width: 1500px) {
+  nav {
+    top: 42px;
+    left: 481.5px;
+  }
+
+  main {
+    margin-left: 723px;
+    margin-right: 450px;
+  }
+
+  .sidebar,
+  .footerContent {
+    margin-left: 450px;
+  }
 }
