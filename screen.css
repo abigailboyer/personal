@@ -177,6 +177,18 @@ footer p {
   margin-left: 21px;
 }
 
+/* temporary placeholders for images */
+img {
+  border: 0;
+  width: 50%;
+  height: auto; /* temporary until there are real images */
+}
+
+#bg {
+  background: radial-gradient(177.18% 177.18% at 100% 0%, #A4FFBD 0%, #1D5CFF 100%), #38C4CD;
+  box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25);
+}
+
 /* media queries */
 
 /* this max width is temporary */
