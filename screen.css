@@ -81,7 +81,6 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -124,6 +123,14 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+#home a {
+  text-decoration: none;
+}
+
+#home a:hover {
+  text-decoration: underline;
 }
 
 #home #about {
@@ -239,5 +246,28 @@ footer {
 @media (min-width:1000px) {
   header {
     text-align: left;
+  }
+
+  /* opacity selection for non mobile devices */
+  /* low opacity over not hovered items */
+  #home:hover #pos,
+  #home:hover #starfleet,
+  #home:hover #clara {
+    transition: opacity 0.3s;
+    opacity: .3;
+  }
+
+  /* full opacity over hovered item */
+  #home #starfleet:hover,
+  #home #clara:hover,
+  #home #pos:hover {
+    opacity: 1;
+  }
+
+  /* style link for hovered item */
+  #starfleet:hover *,
+  #clara:hover *,
+  #pos:hover * {
+    text-decoration: underline;
   }
 }
