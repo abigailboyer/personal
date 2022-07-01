@@ -4,296 +4,222 @@ nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,su
 menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-/* todo:
-  . use ems
-  . adjust to baseline
-  . add js for the menu button
-  .
- */
+/*
+  font-family: 'Inconsolata', monospace; secondary
+  font-family: 'Open Sans', sans-serif; primary
+  font-family: 'Racing Sans One', sans-serif; display
+  font-family: 'Rambla', sans-serif; Starfleet
+  font-family: 'Roboto', sans-serif; Clara
+*/
+
+/*
+  59.301px
+  4.236em
+  3.706em @ 16
+
+  54.976px
+  3.927em
+  3.436em @ 16
+
+  36.651px
+  2.618em
+  2.291em @ 16
+
+  33.978px
+  2.427em
+  2.124em @ 16
+
+  22.652px
+  1.618em
+  1.416em @ 16
+
+  21px
+  1.5em
+  1.313em @ 16
+
+  14px
+  1em
+  0.875em @ 16
+*/
+
+/*
+  baseline grid, multiples of 16 / 8:
+  8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144,
+  152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 264,
+  272, 280, 288, 296, 304, 312, 320, 328, 336, 344, 352, 360, 368, 376, 384,
+  392, 400, 408, 416, 424, 432, 440, 448, 456, 464, 472, 480, 488, 496, 504,
+  512, 520
+*/
 
 body {
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-family: 14px;
-  line-height: 21px;
-  height: 100%;
-}
-
-main,
-header {
-  margin: 73.5px 31.5px;
-}
-
-main {
-  /* footer */
-  margin-bottom: 100px;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-a:hover {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-p {
-  padding-bottom: 10.5px;
+  font-size: 14px; /* 1em */
+  line-height: 1.5em; /* 21px */
+  background-color: #fffaf5;
+  padding: 24px 40px 0 40px;
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 42px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 20px;
-  line-height: 21px;
-  font-weight: 600;
-  margin-bottom: 21px;
-}
-
-h3 {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 600;
-  margin-bottom: 5.25px;
-}
-
-h4 {
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-h5 {
-  font-size: 14px;
-  line-height: 21px;
-  color: rgba(0, 0, 0, 0.75);
-  margin-bottom: 15.75px;
-}
-
-header h2 {
-  font-size: 16px;
+  font-family: 'Racing Sans One', sans-serif;
   font-weight: 400;
+  font-size: 2.618em; /* 36.651px */
+  line-height: 56px; /* multiple of 16 + 8 */
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
-nav {
-  display: inline-block;
-  margin-bottom: 21px;
+h1,
+h2 {
+  color: #E05D49;
+}
+
+h2,
+h3 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.618em; /* 22.652px */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+header a {
+  text-decoration: none;
+  color:inherit;
+}
+
+header {
+  padding: 16px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+p {
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+#home section {
+  height: 188px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  padding: 16px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* flexbox child class */
+.flex {
+  display: block;
+  width: 100%;
+}
+
+section p {
+  font-size: 14px;
+  text-align: inherit;
+}
+
+#home #about,
+#home #about h2 {
+  background-color: #FFE1EE;
+  height: auto;
+  text-align: left;
+}
+
+#starfleet {
+  background-color: #414141;
+}
+
+#starfleet h2 {
+  font-family: 'Rambla', sans-serif;
+  font-style: italic;
+  font-size: 28px;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+  color: #F5DB53;
+}
+
+#starfleet p {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+#pos,
+#pos h2,
+#pos p {
+  background-color: #DBD2EA;
+  color: #8761C7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#pos h2 {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+#pos p {
+  padding-bottom: 0;
+}
+
+#clara,
+#clara h2,
+#clara p {
+  background-color: #B6E5F3;
+  font-family: 'Roboto', sans-serif;
+}
+
+#clara h2 {
+  color: white;
+  opacity: 80%;
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+
+#clara p {
+  color: #37ABD0;
 }
 
 nav li {
-  float: left;
-  margin-right: 14px;
-}
+  background-color: #A9D8D3;
+  border-radius: 15px;
+  height: 48px;
+  color: #568D86;
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
-#education p {
-  padding-bottom: 5.75px;
-}
-
-#education .school {
-  font-style: italic;
-  font-weight: 400;
-}
-
-#education .dates {
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 0;
-  padding: 0;
-}
-
-.project {
-  clear: both;
-  display: inline-block;
-  margin-bottom: 42px;
-}
-
-.projectLinks {
-  margin-top: .25px;
-  margin-bottom: 15.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: pink;
-}
-
-.projectLinks li {
-  float: left;
-  margin-right: 14px;
-}
-
-#about,
-#education {
-  margin-bottom: 42px;
-}
-
-/* skills section */
-
-#skills {
-  overflow: hidden;
-}
-
-#skills li {
-  list-style: inside;
-  white-space: normal;
-  margin-left: 10px;
-}
-
-#skills h2 {
-  margin-bottom: 10.5px;
-  padding-left: 0;
-}
-
-#skills h4 {
-  margin-top: 10.5px;
-}
-
-.skillColumns {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.skillsOther {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-  padding: 42px 21px;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.04);
-  box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  padding: 16px;
 }
 
-footer p {
-  float: left;
-  margin-left: 21px;
-}
-
-/* temporary placeholders for images */
-img {
-  border: 0;
-  width: 50%;
-  height: auto; /* temporary until there are real images */
-}
-
-#bg {
-  background: radial-gradient(177.18% 177.18% at 100% 0%, #A4FFBD 0%, #1D5CFF 100%), #38C4CD;
-  box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25);
-}
-
-/* media queries */
-
-/* this max width is temporary */
-/* hardcoded image pixel widths are temporary */
-@media (max-width: 400px) {
-  .skillColumns,
-  .skillsOther {
-    display: block;
-  }
-}
-
-@media (min-width: 400px) {
-  .skillColumns {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-}
-
-@media (min-width: 450px) {
-  #skills li {
-    white-space: nowrap;
-  }
-}
-
-@media (min-width: 700px) {
-  header,
-  main {
-    margin-top: 100px;
-  }
-
-  /* find a better way to do the sidebar */
-  main {
-    margin-left: 273px;
-    padding-top: 10.5px;
-  }
-
-  nav {
-    position: absolute;
-    top: 21px;
-    left: 31.5px;
-  }
-
-  .sidebar {
-    float: left;
-    width: 200px;
-  }
-
-  #about,
-  #skills {
-    margin-top: 42px;
-  }
-
-  .skillsOther {
-    grid-template-columns: auto auto auto;
-  }
-}
-
-@media (min-width: 900px) {
-  nav {
-    top: 42px;
-    left: 181.5px;
-  }
-
-  main {
-    margin-left: 423px;
-    margin-right: 150px;
-  }
-
-  .sidebar,
-  .footerContent {
-    margin-left: 150px;
-  }
-}
-
-@media (min-width: 1200px) {
-  nav {
-    top: 42px;
-    left: 281.5px;
-  }
-
-  main {
-    margin-left: 523px;
-    margin-right: 250px;
-  }
-
-  .sidebar,
-  .footerContent {
-    margin-left: 250px;
-  }
-}
-
-
-@media (min-width: 1500px) {
-  nav {
-    top: 42px;
-    left: 481.5px;
-  }
-
-  main {
-    margin-left: 723px;
-    margin-right: 450px;
-  }
-
-  .sidebar,
-  .footerContent {
-    margin-left: 450px;
+@media (min-width:1000px) {
+  header {
+    text-align: left;
   }
 }
