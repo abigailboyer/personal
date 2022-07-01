@@ -52,7 +52,8 @@ menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul
 */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  /* font-family open sans maybe */
   font-size: 14px; /* 1em */
   line-height: 1.5em; /* 21px */
   background-color: #fffaf5;
@@ -104,36 +105,37 @@ p {
   text-align: left;
 }
 
-#home section {
-  height: 188px;
-  margin-bottom: 24px;
-  border-radius: 15px;
-  padding: 16px;
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* flexbox child class */
-.flex {
-  display: block;
-  width: 100%;
-}
-
 section p {
   font-size: 14px;
   text-align: inherit;
 }
 
-#home #about,
-#home #about h2 {
+section {
+  padding: 24px;
+}
+
+#home section {
+  height: 188px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home #about {
+  display: block;
   background-color: #FFE1EE;
   height: auto;
   text-align: left;
+}
+
+#about h2 {
+  font-weight: bold;
+  padding-bottom: 8px;
 }
 
 #starfleet {
@@ -155,10 +157,13 @@ section p {
   padding-bottom: 0;
 }
 
+#pos {
+    background-color: #DBD2EA;
+}
+
 #pos,
 #pos h2,
 #pos p {
-  background-color: #DBD2EA;
   color: #8761C7;
   font-family: 'Open Sans', sans-serif;
 }
@@ -192,10 +197,14 @@ section p {
   color: #37ABD0;
 }
 
+nav {
+  margin-top: 24px;
+}
+
 nav li {
   background-color: #A9D8D3;
   border-radius: 15px;
-  height: 48px;
+  height: 56px;
   color: #568D86;
   font-family: 'Inconsolata', monospace;
   font-size: 14px;
@@ -203,10 +212,14 @@ nav li {
   text-align: center;
   margin-bottom: 16px;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
+nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 footer {
@@ -216,6 +229,11 @@ footer {
   right: 0;
   height: 64px;
   padding: 16px;
+
+  /* vertically aligning the children */
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 @media (min-width:1000px) {
