@@ -57,14 +57,14 @@ body {
   font-size: 14px; /* 1em */
   line-height: 1.5em; /* 21px */
   background-color: #fffaf5;
-  padding: 24px 40px 0 40px;
+  padding: 24px 24px 0 24px;
 }
 
 h1 {
   font-family: 'Racing Sans One', sans-serif;
   font-weight: 400;
   font-size: 2.618em; /* 36.651px */
-  line-height: 56px; /* multiple of 16 + 8 */
+  line-height: 56px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -211,12 +211,11 @@ nav {
 nav li {
   background-color: #A9D8D3;
   border-radius: 15px;
-  height: 56px;
+  height: 48px;
   color: #568D86;
   font-family: 'Inconsolata', monospace;
   font-size: 14px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 16px;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -240,7 +239,6 @@ footer {
   /* vertically aligning the children */
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 
 @media (min-width:1000px) {
