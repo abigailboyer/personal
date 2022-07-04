@@ -145,6 +145,14 @@ section {
   padding-bottom: 8px;
 }
 
+#about p:last-child {
+  color: #E05D49;
+}
+
+#about a {
+  font-weight: bold;
+}
+
 #starfleet {
   background-color: #414141;
 }
@@ -204,10 +212,6 @@ section {
   color: #37ABD0;
 }
 
-nav {
-  margin-top: 24px;
-}
-
 nav li {
   background-color: #A9D8D3;
   border-radius: 15px;
@@ -241,31 +245,42 @@ footer {
   align-items: center;
 }
 
-@media (min-width:1000px) {
+@media (min-width:600px) {
+  body {
+    padding: 24px 80px 0 80px;
+  }
+}
+
+@media (min-width:900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  #home section {
+    margin-bottom: 0;
+  }
+
   header {
     text-align: left;
   }
+}
 
-  /* opacity selection for non mobile devices */
-  /* low opacity over not hovered items */
-  #home:hover #pos,
-  #home:hover #starfleet,
-  #home:hover #clara {
-    transition: opacity 0.3s;
-    opacity: .3;
+@media (min-width:1200px) {
+  body {
+    padding: 48px 160px 0 160px;
   }
+}
 
-  /* full opacity over hovered item */
-  #home #starfleet:hover,
-  #home #clara:hover,
-  #home #pos:hover {
-    opacity: 1;
+@media (min-width: 1400px) {
+  body {
+    padding: 64px 240px 0 240px;
   }
+}
 
-  /* style link for hovered item */
-  #starfleet:hover *,
-  #clara:hover *,
-  #pos:hover * {
-    text-decoration: underline;
+@media (min-width: 1600px) {
+  body {
+    padding: 64px 280px 0 280px;
   }
 }
