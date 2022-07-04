@@ -6,21 +6,11 @@ header {
   margin: 0 16px 16px 16px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
   color: #F5DB53;
   text-align: left;
   line-height: 48px;
 }
-
-section {
-  background-color: white;
-  border-radius: 15px;
-  padding: 16px;
-}
-
 nav a {
   font-family: 'Racing Sans One', sans-serif;
   letter-spacing: 2px;
@@ -29,6 +19,35 @@ nav a {
   text-decoration: none;
   justify-content: flex-start;
   padding-left: 16px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin: 16px 0 32px 0;
+}
+
+main {
+  display: block;
+}
+
+section {
+  border-radius: 15px;
+  padding: 16px;
+  background-color: white;
+  margin-bottom: 16px;
+}
+
+section h2 {
+  font-size: 16px;
+  line-height: 21px;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+section p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .red {
@@ -46,7 +65,31 @@ nav a {
   color: rgba(0, 0, 0, 0.4);
 }
 
-
 footer {
   color: white;
+  margin-left: 16px;
+}
+
+@media (min-width:700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 24px;
+  }
+}
+
+@media (min-width:1000px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main {
+    width: 800px;
+  }
+
+  footer {
+    width: 800px;
+  }
 }
