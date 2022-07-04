@@ -11,6 +11,7 @@ h1 {
   text-align: left;
   line-height: 48px;
 }
+
 nav a {
   font-family: 'Racing Sans One', sans-serif;
   letter-spacing: 2px;
@@ -39,11 +40,17 @@ section {
 }
 
 section h2 {
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 32px;
   color: #000;
   font-weight: bold;
   padding-bottom: 8px;
+}
+
+section h3 {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
 }
 
 section p {
