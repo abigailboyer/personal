@@ -135,7 +135,7 @@ section {
 
 #home #about {
   display: block;
-  background-color: #FFE1EE;
+  background-color: #fff;
   height: auto;
   text-align: left;
 }
@@ -173,13 +173,13 @@ section {
 }
 
 #pos {
-    background-color: #DBD2EA;
+    background-color: #FFE1EE;
 }
 
 #pos,
 #pos h2,
 #pos p {
-  color: #8761C7;
+  color: #D24F86;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -258,13 +258,13 @@ footer {
     grid-gap: 24px;
   }
 
-  #home section {
-    margin-bottom: 0;
-  }
-
   header {
     text-align: left;
   }
+}
+
+@media (min-width:1000px) {
+  /* width: 800px */
 }
 
 @media (min-width:1200px) {
