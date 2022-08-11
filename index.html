@@ -4,27 +4,46 @@
   <title>Abigail Boyer</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Racing+Sans+One&family=Rambla:ital,wght@0,700;1,700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="screen.css" />
+  <!--<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Racing+Sans+One&family=Rambla:ital,wght@0,700;1,700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="stylesheets/screen.css" />
 </head>
 <body>
-  <header>
-    <h1><a href="/">Abigail&nbsp;Boyer</a></h1>
-    <h2>Frontend Web Developer</h2>
-  </header>
+  <main>
+    <header>
+      <h1><a href="/">Abigail&nbsp;Boyer</a></h1>
+      <p>UX Developer</p>
+    </header>
 
-  <main id="home">
-    <section id="about">
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <section>
+        <a href="/pos">
+          <h3>Point of Sale Redesign</h3>
+          <p class="subtitle">UX Case Study</p>
+          <p>Redesign of a point of sale system from a major beauty retailer in the U.S. The main goal of this project was to reduce training time and increase customer conversion via loyalty account creation.</p>
+        </a>
+        <a href="/pos" class="button">
+          Expand
+        </a>
+      </section>
+
+      <section>
+        <a href="/starfleet">
+          <h3>Starfleet Academy</h3>
+          <p class="subtitle">React.js Student Portal</p>
+          <p>Starfleet Academy is a traditional student portal for a fictional university. Designed using Figma and developed with React, this web app utilizes React Router, Hooks, and Firebase API to create a functional multipage student portal. Authenticated users can send messages to one another as well as sign up for classes and complete degree requirements using an API that I created.</p>
+        </a>
+        <a href="/starfleet" class="button">
+          Expand
+        </a>
+      </section>
+    </section>
+
+    <section class="about">
       <h2>About Me</h2>
       <p>
-        Hi, I’m Abigail. I'm redoing my portfolio website right now, so please excuse any empty pages or bugs. I'm updating my projects
-        and should have some new content up very soon!
-      </p>
-
-      <p>
-        I graduated recently from Illinois Institute of Technology with a B.S. in
-        Information Technology and Management. I specialized in web development and minored in philosophy,
-        both for the same reason: I’m passionate about considering complex questions and finding their best solutions.
+        I graduated recently from Illinois Institute of Technology with a B.S. in Information Technology and Management. I specialized in web development and minored in philosophy, both for the same reason: I’m passionate about considering complex questions and finding their best solutions.
       </p>
 
       <p>
@@ -36,41 +55,10 @@
       </p>
     </section>
 
-    <div>
-      <a href="/starfleet">
-        <section id="starfleet">
-          <div class="flex">
-            <h2>Starfleet Academy</h2>
-            <p>React.js Student Portal</p>
-          </div>
-        </section>
-      </a>
-
-      <a href="/pos">
-        <section id="pos">
-          <div class="flex">
-            <h2>UX Case Study</h2>
-            <p>Point of Sale Redesign</p>
-          </div>
-        </section>
-      </a>
-
-      <!-- IN PROGRESS!
-      <a href="/clara">
-        <section id="clara">
-          <div class="flex">
-            <h2>Clara</h2>
-            <p>Research&nbsp;Project & Product&nbsp;Design</p>
-          </div>
-        </section>
-      </a> -->
-    </div>
-
+    <footer>
+      <p>Hosted on <a href="https://github.com/abigailboyer/personal">Github</a>.</p>
+    </footer>
   </main>
-
-  <footer>
-    <p>Hosted on <a href="https://github.com/abigailboyer/personal">Github.</a></p>
-  </footer>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="site.js"></script>
