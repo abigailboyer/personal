@@ -41,10 +41,6 @@ table {
 }
 
 /* stylelint-enable */
-/* @font-face {
-  font-family: 'ragile';
-  src: url("ragile-ywgzq.otf") format('opentype');
-} */
 @font-face {
   font-family: "shrikhand";
   src: url("../Shrikhand-Regular.ttf") format("truetype");
