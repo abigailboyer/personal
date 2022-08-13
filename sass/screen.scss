@@ -9,8 +9,8 @@ menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
-  font-family: 'kelin eator';
-  src: url("Kelin Eator.otf") format('opentype');
+  font-family: 'kelin-eator';
+  src: url("../kelin-eator.otf") format('opentype');
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 h1,
 h2,
 h1 a {
-  font-family: 'kelin eator', sans-serif;
+  font-family: 'kelin-eator', sans-serif;
   font-weight: 500;
   color: $orange;
 }
