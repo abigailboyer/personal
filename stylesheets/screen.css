@@ -42,8 +42,8 @@ table {
 
 /* stylelint-enable */
 @font-face {
-  font-family: "shrikhand";
-  src: url("../Shrikhand-Regular.ttf") format("truetype");
+  font-family: "kelin-eator";
+  src: url("../kelin-eator.otf") format("opentype");
 }
 body {
   font-family: "PT Serif", serif;
@@ -59,7 +59,7 @@ body {
 h1,
 h2,
 h1 a {
-  font-family: "shrikhand", sans-serif;
+  font-family: "kelin-eator", sans-serif;
   font-weight: 500;
   color: #fc854e;
 }
